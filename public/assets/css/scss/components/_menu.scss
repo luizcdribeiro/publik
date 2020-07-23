@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 91px;
+  background-color: $branco;
+
+  &--img {
+    img {
+      max-width: 209px;
+      height: 94px;
+    }
+  }
+
+  &--links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 36px;
+    margin-bottom: 23px;
+    li {
+      margin-right: 70px;
+      a {
+        font-size: 24px;
+        line-height: 0.25px;
+        color: $cinza;
+        font-style: normal;
+        text-decoration: none;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 2px;
+          background-color: $cinza;
+          transition: width 200ms ease-in-out;
+          display: block;
+          margin-top: 3px;
+        }
+        &:hover::after {
+          width: 100%;
+          transition: width 200ms ease-in-out;
+        }
+      }
+    }
+  }
+}
