@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// VARIABLES
+$grid-columns-sm: 3;
+$grid-columns-md: 6;
+$grid-columns-lg: 12;
+$gutter: 1em;
+$grid-gutter: 18px;
+$border-gutter: 53px;
+$width-xs: 320px;
+$width-sm: 480px;
+$width-md: 720px;
+$width-lg: 960px;
+$width-xl: 1200px;
+$width-hd: 1720px;
+$break-xs: 375px;
+$break-sm: 600px;
+$break-md: 740px;
+$break-lg: 980px;
+$break-xl: 1220px;
+$break-hd: 1740px;
+$min-sm: 'min-width: (#{$break-sm})';
+$min-md: 'min-width: (#{$break-md})';
+$min-lg: 'min-width: (#{$break-lg})';
+$min-xl: 'min-width: (#{$break-xl})';
+$min-hd: 'min-width: (#{$break-hd})';
+$max-xs: 'max-width: (#{$break-xs})';
+$max-sm: 'max-width: (#{$break-sm - 1px})';
+$max-md: 'max-width: (#{$break-md - 1px})';
+$max-lg: 'max-width: (#{$break-lg - 1px})';
+$max-xl: 'max-width: (#{$break-xl - 1px})';
+$max-hd: 'max-width: (#{$break-hd - 1px})';
+// $ie: (-ms-high-contrast: none), (-ms-high-contrast: active)
+
+//colors
+
+$cinza: #6E6E6B;
+$cinza-Escuro: #616161;
+$branco: #FFFDFD;
+$laranja: #FF5800;
+$degrade-laranja: linear-gradient(351.38deg, #FA9704 3.08%, #EC7847 90.79%);
+
+// TRANSFORM
+$transformIcon: translateX(2px);
+//
+
+// Z-INDEX
+$zIndex-headerTop:2;
+$zIndex-sublevel:2;
+$zIndex-modal: 9999999;
+$zIndex-headerLogin: 99999;
+$zIndex-overlay: 9999;
+$zIndex-overlay-modal:999999;
+$zIndex-fixedMessage: 999;
+$zIndex-tooltip:99;
+$zIndex-menuMobile: 99999;
