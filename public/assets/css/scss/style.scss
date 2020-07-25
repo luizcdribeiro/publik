@@ -1,8 +1,11 @@
 @import 'bases/_reset.scss';
 @import 'bases/_normalize.scss';
-@import 'bases/_colors.scss';
+@import 'bases/_mixins.scss';
+@import 'bases/_variables.scss';
 @import 'bases/_base.scss';
 @import 'bases/_helpers.scss';
 @import 'components/_menu.scss';
+@import 'components/_carrossel.scss';
+
 
 

@@ -44,7 +44,7 @@ exports.compilaSass = compilaSass;
 // função para juntar o js
 function gulpJS() {
   return gulp
-  .src('assets/js/vendor/**/*.js')
+  .src('assets/js/script.js')
   .pipe(concat('main.js'))
   .pipe(babel({
     presets: ['@babel/env']
@@ -95,7 +95,7 @@ exports.minifyImg = minifyImg;
 // função para observar as mudanças nos arquivos
 function watch() {
   gulp.watch('assets/css/scss/**/*.scss', gulp.parallel(compilaSass));
-  gulp.watch('assets/js/vendor/**/*.js', gulpJS)
+  gulp.watch('assets/js/script.js', gulpJS)
   gulp.watch('*.html').on('change', browserSync.reload);
 }
 // inicia a tarefa de watch

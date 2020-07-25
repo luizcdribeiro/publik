@@ -1,0 +1,1 @@
+"use strict";var _slide=_interopRequireDefault(require("./vendor/slide.js"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}var slide=new _slide.default(".slide",".wrapper-slide");slide.init(),slide.addArrow(".prev",".next"),slide.addControl(".custom-controls");
