@@ -1,5 +1,5 @@
 .container-slide {
-  background-image: url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=761&q=80');
+  background-image: url('../img/banner-topo.png');
   background-position: center;
   background-size: cover;
   height: 925.74px;
@@ -95,9 +95,7 @@
 .custom-controls {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 .custom-controls li {

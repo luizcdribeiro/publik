@@ -1,0 +1,79 @@
+.wave {
+  background-image: url('../img/quem-somos.png');
+  background-position: center;
+  background-size: cover;
+  height:692px;
+  width: 100%;
+  position: absolute;
+  top: 740px;
+  &-institucional {
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    h2 {
+      font-size: 32px;
+      line-height: 37px;
+      color: $branco;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    p {
+      color: $branco;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 20px;
+      max-width: 796px;
+    }
+  }
+
+  &-carrossel {
+    display: flex;
+    justify-content: center;
+    top: -120px;
+    &__componente {
+      max-width: 245px;
+      background-color: $branco;
+      border-radius: 25px;
+      height: 243px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 4px 0px 4px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 25px;
+      padding-right: 30px;
+      margin-right: 67px;
+    
+      figure {
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 14px;
+        svg {
+          fill: $laranja;
+          max-width: 74px;
+          max-height: 74px;
+        }
+      }
+
+      h3 {
+        margin-bottom: 13px;
+        color: $cinza;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.25px;
+      }
+
+      p {
+        max-width: 245px;
+        height: 70px;
+        font-size: 15px;
+        line-height: 18px;
+        color: $cinza-Escuro;
+        padding-bottom: 35px;
+      }
+
+    }
+  }
+}
