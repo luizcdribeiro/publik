@@ -1,0 +1,48 @@
+.clientes {
+  margin-top: 293px;
+  background: url('../img/bg-cliente.png');
+  height: 1531px;
+  background-position: center;
+  background-size: 100% 1364px;
+  background-repeat: no-repeat;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    left: -400px;
+    top: 350px;
+    position: relative;
+
+    h2 {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 59px;
+      color: $branco;
+    }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-item {
+    background: url('../img/coca-cola.png') no-repeat center center;
+    max-width: 488.36px !important;
+    height: 576.85px;
+    border-radius: 25px;
+    margin: 0 70px;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 53px;
+      color: $branco;
+    }
+  }
+}

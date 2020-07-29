@@ -13,4 +13,10 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3
   });
+
+  $('.clientes-container').slick({
+    infinite: true,
+    slidesToScroll: 3,
+    slidesToShow: 3
+  })
 });
