@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "@babel/polyfill": "^7.10.4",
     "browser-sync": "^2.26.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -16,11 +17,16 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "gulp-babel": "^8.0.0"
+    "gulp-babel": "^8.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "start": "gulp"
   },
   "keywords": [],

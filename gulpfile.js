@@ -50,7 +50,7 @@ function gulpJS() {
     presets: ['@babel/env']
   }))
   .pipe(uglify())
-  .pipe(gulp.dest('assets/js/'))
+  .pipe(gulp.dest('./'))
   .pipe(browserSync.stream())
 }
 
@@ -103,4 +103,4 @@ function watch() {
 exports.watch = watch;
 
 // tarefa default com funções paralelas
-exports.default = gulp.parallel(watch, browser, compilaSass);
+exports.default = gulp.parallel(watch, browser, compilaSass, gulpJS);
