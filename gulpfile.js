@@ -103,4 +103,4 @@ function watch() {
 exports.watch = watch;
 
 // tarefa default com funções paralelas
-exports.default = gulp.parallel(watch, browser, compilaSass, gulpJS);
+exports.default = gulp.parallel(watch, browser, compilaSass);
