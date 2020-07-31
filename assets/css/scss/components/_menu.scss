@@ -1,10 +1,11 @@
 .menu {
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: $branco;
   align-items: center;
   @media screen and ($max-sm) {
     justify-content: space-between;
     margin-bottom: 16px;
+    align-items: flex-end;
   }
   &--img {
     max-width: 200px;
@@ -22,16 +23,21 @@
     display: flex;
     flex-wrap: wrap;
   }
-  li a {
-    display: block;
-    padding: 10px;
-    margin-right: 10px;
-    color: $cinza;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    &::after {
+  li {
+    margin-right: 70px;
+    @media screen and ($max-sm) {
+     margin-right: 0;
+    }
+    a {
+      display: block;
+      padding: 10px;
+      margin-right: 10px;
+      color: $cinza;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      &::after {
       content: '';
       width: 0;
       height: 2px;
@@ -39,10 +45,11 @@
       transition: width 200ms ease-in-out;
       display: block;
       margin-top: 3px;
-    }
-    &:hover::after {
+      }
+      &:hover::after {
       width: 100%;
       transition: width 200ms ease-in-out;
+      }
     }
-  }
+  } 
 }
