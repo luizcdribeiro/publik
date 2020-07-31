@@ -23,9 +23,10 @@
     height: 7px;
     width: 45px;
     background: $laranja;
-    box-shadow: 0 5px $laranja, 0 -5px $laranja;
+    box-shadow: 0 11px $laranja, 0 -11px $laranja;
     transition: transform .3s;
     border-radius: 25px;
+    border: none;
   }
 
   .js [data-menu="button"].active::before {
@@ -40,9 +41,10 @@
     background: #FFFFFE;
     border-radius: 25px;
     z-index: 200;
-    top: 0;
+    top: 57px;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
     padding: 24px;
+    left: 160px;
     
     a {
       font-size: 18px;

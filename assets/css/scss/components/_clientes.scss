@@ -31,10 +31,11 @@
 
   &-item {
     background: url('../img/coca-cola.png') no-repeat center center;
-    max-width: 488.36px !important;
-    height: 576.85px;
+    width: 488.36px !important;
+    max-width: 100%;
+    height: 576px;
     border-radius: 25px;
-    margin: 0 70px;
+    margin: 0 40px;
     outline: none;
     justify-content: center;
     align-items: center;
