@@ -57,5 +57,10 @@
     border: 3px solid #FF5800;
     box-sizing: border-box;
     border-radius: 25px;
+
+    @media screen and ($max-sm) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }

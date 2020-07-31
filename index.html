@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Publik</title>
 </head>
 <body>
@@ -12,14 +13,15 @@
     <div class="menu--img">
       <img src="./assets/img/logo-publik-transparente.png" alt="logo publik">
     </div>
-    <div >
-      <ul class="menu--links">
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="#">Nossos Seviços</a></li>
-        <li><a href="#">Nossa Expertise</a></li>
+    <nav data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+      <ul data-menu="lista" id="menu">
+        <li><a href="#animais">Quem Somos</a></li>
+        <li><a href="#faq">Nossos Serviços</a></li>
+        <li><a href="#contato">Nossa Expertise</a></li>
         <li><a href="#">Contatos</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
   <div class="container-slide galeria">
     <div class="wrapper-slide">
@@ -342,35 +344,28 @@
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
             breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
-          }
+          },
         ]
       });
 
       $('.clientes-container').slick({
         infinite: true,
         slidesToScroll: 3,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+        ]
       })
     });
   </script>

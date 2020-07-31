@@ -37,4 +37,8 @@
 .leftButton {
   position: relative;
   left: 330px;
+
+  @media screen and ($max-sm) {
+    left: 0;
+  }
 }
