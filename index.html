@@ -88,7 +88,7 @@
       </article>
     </div>
 
-    <div class="wrapper wave-carrossel">
+    <div class="wave-carrossel">
       <div class="carrossel__componente">
         <figure>
           <?xml version="1.0" encoding="iso-8859-1"?>
@@ -354,7 +354,8 @@
             breakpoint: 600,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              centerMode: true,
             }
           },
         ]
@@ -390,8 +391,9 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: true,
+                infinite: false,
                 arrows: false,
+                centerMode: true,
               }
             }
           ]
@@ -412,23 +414,22 @@
                 slidesToScroll: 1,
                 infinite: true,
                 arrows: false,
+                centerMode: true,
               }
             }
           ]
       });
 
       $('.slide').slick ({
-        infinite: true,
-        slidesToScroll: 1,
-        slidesToShow: 1,
         dots: true,
+        centerMode: true,
         responsive: [
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
               arrows: false,
+              centerMode: true,
+              infinite: false
             }
           },
         ]

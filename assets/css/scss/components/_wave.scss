@@ -6,6 +6,14 @@
   width: 100%;
   position: absolute;
   top: 773px;
+  @media screen and (max-width: 599px) {
+    top: -49px;
+    position: relative;
+    background-image: url('../img/wave-responsivo.png');
+    background-position: center;
+    background-size: cover;
+    height: 494px;
+  }
   &-institucional {
     justify-content: center;
     flex-wrap: nowrap;
@@ -16,7 +24,9 @@
       margin-right: 250px;
       @media screen and (max-width: 599px) {
         margin-right: 0;
-    }
+        margin: 0 auto;
+        margin-bottom: 51px;
+      }
     }
     h2 {
       font-size: 32px;
@@ -24,6 +34,10 @@
       color: $branco;
       margin-bottom: 20px;
       font-weight: bold;
+      @media screen and (max-width: 599px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
     }
     p {
       color: $branco;
@@ -31,6 +45,13 @@
       line-height: 19px;
       margin-bottom: 20px;
       max-width: 796px;
+      @media screen and (max-width: 599px) {
+        font-size: 13px;
+        line-height: 18px;
+        max-width: 100%;
+        max-width: 303px;
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -39,5 +60,10 @@
     justify-content: center;
     top: -120px;
     margin-bottom: 107px;
+    position: relative;
+    @media screen and (max-width: 599px) {
+      top: -86px;
+      margin-bottom: 0;
+    }
   }
 }
