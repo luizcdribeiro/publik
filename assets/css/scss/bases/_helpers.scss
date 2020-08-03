@@ -29,6 +29,13 @@
   border: none;
   cursor: pointer;
 
+  @media screen and ($max-sm) {
+    width: 88.21px;
+    height: 26px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
   &:hover {
     opacity: 0.9;
   }
