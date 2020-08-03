@@ -4,6 +4,12 @@
   background-size: cover;
   height: 961.74px;
   width: 100%;
+  @media screen and ($max-sm) {
+    height: 219px;
+    background-image: url('../img/bg-responsivo.png');
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .wrapper-slide {
@@ -18,16 +24,26 @@
   will-change: transform;
 }
 
-.slide li {
-  width: 100%;
+.slide-item {
+  width: 670px !important;
   flex-shrink: 0;
   max-width: 800px;
   margin: 179px auto;
-  opacity: 0;
   transform: scale(.8);
   transition: .4s;
   border-radius: 5px;
   overflow: hidden;
+  outline: none;
+  flex-direction: column;    
+  margin-right: 870px;
+  margin-top: 110px;
+  @media screen and ($max-sm) {
+    max-width: 100%;
+    width: 100% !important;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
   h1 {
     font-size: 50px;
     color: $laranja;
@@ -36,6 +52,10 @@
     text-align: left;
     line-height: 59px;
     margin-bottom: 5px;
+    @media screen and ($max-sm) {
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 
   h2 {
@@ -44,6 +64,10 @@
     text-align: left;
     line-height: 39px;
     letter-spacing: 0.25px;
+    @media screen and ($max-sm) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   p {
@@ -54,106 +78,23 @@
     font-style: normal;
     font-weight: normal;
     max-width: 490px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 6px;
+    @media screen and ($max-sm) {
+      font-size: 13px;
+      line-height: 15px;
+      padding-bottom: 16px;
+      padding-top: 10px;
+    }
   }
 }
 
-.slide li.active {
-  opacity: 1;
-  transform: scale(1);
-  margin-right: 530px;
-  margin-left: 20px;
+.slide .slick-next {
+  right: 105px;
 }
 
-[data-control="slide"] {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-[data-control="slide"] li a {
-  display: block;
-  width: 26px;
-  height: 26px;
-  background: #FB5;
-  border-radius: 50%;
-  overflow: hidden;
-  text-indent: -999px;
-  margin: 5px;
-}
-
-[data-control="slide"] li.active a, [data-control="slide"] li a:hover {
-  background: #E54;
-}
-
-
-.container-controls {
-  position: relative;
-}
-
-
-.custom-controls {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.custom-controls li {
-  opacity: .8;
-  transform: scale(.8);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 2px;
-  box-shadow: 0 2px 2px rgba(0,0,0,.5);
-  cursor: pointer;
-  transition: .3s;
-  border: 1px solid $laranja;
-  background-color: transparent;
-}
-
-
-.custom-controls li.active {
-  opacity: 1;
-  transform: scale(1);
-  background-color: $cinza;
-  border: none;
-}
-
-.arrow-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 30px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -360px;
-}
-
-.arrow-nav button {
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  background: #C4C4C4;
-  color: $laranja;
-  width: 41px;
-  height: 41px;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.arrow-nav button img {
-  width: 9px;
-  height: 21px;
-}
-
-
-.arrow-nav button.prev {
-  transform: rotate(-180deg);
+.slide .slick-prev {
+  left: 105px;
 }
 
 // carrossel componente

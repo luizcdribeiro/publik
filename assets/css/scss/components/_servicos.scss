@@ -33,6 +33,9 @@
     flex-wrap: wrap;
     max-width: 1460px;
     margin-bottom: 57px;
+    @media screen and (max-width: 599px) {
+      max-width: 100%;
+    }
 
     .carrossel__componente {
       margin-bottom: 57px;
