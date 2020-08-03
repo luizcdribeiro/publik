@@ -50,11 +50,6 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 599px) {
-        max-width: 100% !important;
-        width: 100% !important;
-    }
-
     &:before,
     &:after {
         content: "";

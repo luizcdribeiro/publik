@@ -38,11 +38,12 @@
   margin-right: 870px;
   margin-top: 110px;
   @media screen and ($max-sm) {
-    max-width: 100%;
+    max-width: 302px;
     width: 100% !important;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
+    margin-left: 0;
   }
   h1 {
     font-size: 50px;
@@ -105,7 +106,7 @@
   top: -120px;
   margin-bottom: 107px;
   &__componente {
-    width: 236px;
+    width: 236px !important;
     max-width: 100%;
     background-color: $branco;
     border-radius: 25px;
@@ -120,6 +121,14 @@
     padding-bottom: 35px;
     margin-right: 67px;
     outline: none;
+    @media screen and (max-width: 599px) {
+      padding: 14px 30px 29px 40px;
+      max-width: 100%;
+      width: 218px !important;
+      height: 197px;
+      margin-bottom: 20px;
+      margin-right: 33px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -135,6 +144,14 @@
         fill: $laranja;
         max-width: 74px;
         max-height: 74px;
+        @media screen and (max-width: 599px) {
+          width: 69px;
+          height: 69px;
+        }
+      }
+
+      @media screen and (max-width: 599px) {
+        margin: 0 auto;
       }
     }
 
@@ -145,6 +162,11 @@
       font-size: 20px;
       line-height: 30px;
       letter-spacing: 0.25px;
+      @media screen and (max-width: 599px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      
     }
 
     p {
@@ -153,6 +175,10 @@
       font-size: 15px;
       line-height: 18px;
       color: $cinza-Escuro;
+      @media screen and (max-width: 599px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
 
   }
