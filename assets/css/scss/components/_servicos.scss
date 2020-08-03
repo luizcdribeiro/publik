@@ -4,8 +4,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 599px) {
+    top: 0;
+    margin-top: 63px;
+  }
 
   &-title {
+    @media screen and (max-width: 599px) {
+      max-width: 287px;
+      margin: 0 auto;
+    }
     h2 {
       display: block;
       font-size: 32px;
@@ -16,6 +24,11 @@
       margin-bottom: 39px;
       font-weight: bold;
       margin-top: 107px;
+      @media screen and (max-width: 599px) {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 9px;
+      }
     }
     p {
       max-width: 1030px;
@@ -23,6 +36,12 @@
       line-height: 28px;
       text-align: left;
       margin-bottom: 69px;
+      @media screen and (max-width: 599px) {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px;
+      }
+      
     }
   }
 
@@ -32,7 +51,6 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 1460px;
-    margin-bottom: 57px;
     @media screen and (max-width: 599px) {
       max-width: 100%;
     }
@@ -45,6 +63,19 @@
       height: 197px;
       padding: 15px 26px 28px 29px;
       box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.15), 4px 0px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+      @media screen and (max-width: 599px) {
+        padding: 11px 24px 14px 18px;
+        max-width: 100%;
+        width: 267px !important;
+        height: 200px !important;
+        margin: 0 7px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+         &:first-child {
+          margin-left: 0;
+        }
+      }
 
       &:last-child {
         h3 {
@@ -57,6 +88,10 @@
         svg {
           width: 86px;
           height: 86px;
+          @media screen and (max-width: 599px) {
+            width: 69px;
+            height: 69px;
+          }
         }
       }
     }
