@@ -91,15 +91,16 @@
         @media screen and ($max-sm) {
           font-size: 14px;
           line-height: 16px;
-          padding-bottom: 16px;
-          padding-left: 21px;
-          padding-right: 0;
+          margin-bottom: 16px;
+          margin-left: 21px;
+          margin-right: 0;
+          padding: 0;
         }
       }
 
       p {
         @media screen and ($max-sm) {
-          padding-bottom: 30px;
+          margin-bottom: 30px;
         }
       }
     }
