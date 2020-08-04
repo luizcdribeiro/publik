@@ -27,6 +27,7 @@
     margin-bottom: 150px;
     top: -170px;
     @media screen and ($max-sm) {
+      margin-bottom: 0;
       top: -111px;
       .slick-track {
         justify-content: space-between;
@@ -54,8 +55,8 @@
       }
       @media screen and ($max-sm) {
         max-width: 100%;
-        width: 252px!important;
-        height: 133px!important;
+        width: 252px !important;
+        height: 163px !important;
         margin: 0 10px;
         margin-bottom: 20px;
         margin-top: 48px;
