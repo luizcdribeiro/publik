@@ -64,10 +64,10 @@
       padding: 15px 26px 28px 29px;
       box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.15), 4px 0px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
       @media screen and (max-width: 599px) {
-        padding: 11px 24px 14px 18px;
+        padding: 11px 0px 14px 18px;
         max-width: 100%;
         width: 267px !important;
-        height: 200px !important;
+        height: 220px !important;
         margin: 0 15px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -92,6 +92,11 @@
             width: 69px;
             height: 69px;
           }
+        }
+      }
+      @media screen and (max-width: 599px) {
+        p {
+          max-width: 197px;
         }
       }
     }
