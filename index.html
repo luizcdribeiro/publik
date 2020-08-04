@@ -238,41 +238,42 @@
     </article>
 
     <div class="wrapper depoimento-container">
-      <div class="wrapper depoimento-slide-container" >
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-01.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-02.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-03.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-03.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-03.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-        <div class="depoimento-slide__item">
-          <img src="./assets/img/avatar-03.jpg" alt="">
-          <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-          <p><strong>Isabela Martins,</strong>Designer</p>
-        </div>
-      </div>
     </div>
   </section>
-
+  
+  <div class="wrapper depoimento-slide-container" >
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-01.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-02.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-03.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-03.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-03.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+    <div class="depoimento-slide__item">
+      <img src="./assets/img/avatar-03.jpg" alt="">
+      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
+      <p><strong>Isabela Martins,</strong> Designer</p>
+    </div>
+  </div>
+  
   <section class="clientes">
     <div class="clientes-title">
       <h2>Nossa Expertise</h2>
@@ -357,6 +358,8 @@
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              arrows: false,
+              infinite: true,
               centerMode: true,
             }
           },
@@ -432,9 +435,11 @@
             breakpoint: 600,
             settings: {
               arrows: false,
-              centerMode: true,
               infinite: false,
-              initialSlide: 1
+              initialSlide: 1,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true
             }
           },
         ]
