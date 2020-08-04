@@ -122,12 +122,12 @@
     margin-right: 67px;
     outline: none;
     @media screen and (max-width: 599px) {
-      padding: 14px 30px 29px 40px;
+      padding: 0;
       max-width: 100%;
-      width: 218px !important;
-      height: 200px !important;
+      width: 288px !important;
+      height: 231px !important;
       margin-bottom: 20px;
-      margin-right: 33px;
+      margin-right: 21px;
     }
 
     &:last-child {
@@ -152,6 +152,7 @@
 
       @media screen and (max-width: 599px) {
         margin: 0 auto;
+        margin-top: 18px;
       }
     }
 
@@ -165,6 +166,7 @@
       @media screen and (max-width: 599px) {
         font-size: 18px;
         line-height: 21px;
+        margin-left: 40px;
       }
       
     }
@@ -179,7 +181,8 @@
         font-size: 14px;
         line-height: 16px;
         height: 100%;
-
+        margin-left: 40px;
+        margin-right: 10px;
       }
     }
 
