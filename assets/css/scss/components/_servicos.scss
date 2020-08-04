@@ -67,7 +67,7 @@
         padding: 0;
         max-width: 100%;
         width: 267px !important;
-        height: 220px !important;
+        height: 240px !important;
         margin-bottom: 20px;
         margin-top: 20px;
         margin-right: 11px;
@@ -97,6 +97,7 @@
 
         @media screen and (max-width: 599px) {
           margin-top: 18px;
+          padding: 0;
         }
       }
       @media screen and (max-width: 599px) {
