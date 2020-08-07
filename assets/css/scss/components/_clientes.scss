@@ -30,7 +30,7 @@
     }
 
     @media screen and (max-width: 599px) {
-      left: -100px;
+      left: -80px;
       top: 125px;
 
       h2  {
@@ -44,6 +44,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 599px) {
+      max-width: 100%;
+      margin: 0;
+      width: 100%;
+    }
   }
 
   &-item {
@@ -66,7 +72,7 @@
     @media screen and (max-width: 599px) {
       width: 242.24px !important;
       height: 286.13px;
-      margin: 0 35px;
+      margin: 0 16px;
 
       p {
         font-size: 26px;

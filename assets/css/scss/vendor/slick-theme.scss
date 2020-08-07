@@ -179,18 +179,17 @@ $slick-opacity-not-active: 0.25 !default;
             @media screen and (max-width: 599px) {
                 width: 8px;
                 height: 8px;
-
-                top: -1px;
-                left: -1px;
+                top: 1px;
+                left: 1px;
+                position: relative;
             }
-            &:hover, &:focus {
+            &:hover{
                 outline: none;
                 background-color: #C4C4C4;
                 border-radius: 50%;
                 border: none;
-
-                &:before {
-                    opacity: $slick-opacity-on-hover;
+                @media screen and (max-width: 599px) {
+                    background: none;
                 }
             }
             &:before {

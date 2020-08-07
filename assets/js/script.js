@@ -44,3 +44,17 @@ function menuMobile() {
 menuMobile();
 
 
+function scrollSuave() {
+  const links =  document.querySelectorAll('[data-menu="suave"] a[href^="#"]')
+
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = event.currentTarget.getAttribute('href');
+      const section = document.querySelector(href);
+      section.scrollIntoView({block: "start", behavior: "smooth"});
+    })
+  })
+}
+
+scrollSuave()
