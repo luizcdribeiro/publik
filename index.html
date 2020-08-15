@@ -263,21 +263,6 @@
       <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
       <p><strong>Isabela Martins,</strong> Designer</p>
     </div>
-    <div class="depoimento-slide__item">
-      <img src="./assets/img/avatar-03.jpg" alt="">
-      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-      <p><strong>Isabela Martins,</strong> Designer</p>
-    </div>
-    <div class="depoimento-slide__item">
-      <img src="./assets/img/avatar-03.jpg" alt="">
-      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-      <p><strong>Isabela Martins,</strong> Designer</p>
-    </div>
-    <div class="depoimento-slide__item">
-      <img src="./assets/img/avatar-03.jpg" alt="">
-      <article>“Porttitor scelerisque metus. Lorem ipsum dolor sit amet.”</article>
-      <p><strong>Isabela Martins,</strong> Designer</p>
-    </div>
   </div>
   
   <section class="clientes" id="expertise">
@@ -355,21 +340,25 @@
   <script>
     $(document).ready(function(){
       $('.depoimento-slide-container').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        autoplay: false,
+        autoplaySpeed: 2000,
         responsive: [
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-              infinite: true,
-              centerMode: true,
+            {
+              breakpoint: 9999,
+              settings: "unslick"
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                arrows: false,
+                centerMode: true,
+                initialSlide: 1
+              }
             }
-          },
-        ]
+          ]
       })
 
       $('.clientes-container').slick({
@@ -438,17 +427,15 @@
 
       $('.slide').slick ({
         dots: true,
-        centerMode: true,
         responsive: [
           {
             breakpoint: 600,
             settings: {
               arrows: false,
               infinite: false,
-              initialSlide: 1,
+              initialSlide: 01,
               slidesToShow: 1,
-              slidesToScroll: 1,
-              centerMode: true
+              slidesToScroll: 1
             }
           },
         ]

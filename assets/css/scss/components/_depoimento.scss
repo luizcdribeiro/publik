@@ -24,8 +24,8 @@
   }
   &-slide-container {
     display: flex;
-    margin-bottom: 150px;
     top: -170px;
+    flex-wrap: nowrap;
     @media screen and ($max-sm) {
       margin-bottom: 0;
       top: -111px;
