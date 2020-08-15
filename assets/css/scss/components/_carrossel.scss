@@ -25,7 +25,6 @@
 }
 
 .slide-item {
-  width: 670px !important;
   flex-shrink: 0;
   max-width: 800px;
   margin: 179px auto;
@@ -39,7 +38,6 @@
   margin-top: 110px;
   @media screen and ($max-sm) {
     max-width: 100%;
-    width: 375px !important;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -140,9 +138,9 @@
       max-width: 74px;
       max-height: 74px;
       margin: 0 70px;
-      svg {
+      svg, img {
         fill: $laranja;
-        max-width: 74px;
+        width: 74px;
         max-height: 74px;
         @media screen and (max-width: 599px) {
           width: 69px;
