@@ -108,4 +108,23 @@
     }
   }
 
+  input.nao-aparece, label.nao-aparece {
+    display: none;
+  }
+
+  #form-erro span, #form-send span  {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  #form-send {
+    color: #31aa39;
+  }
+  
+  #form-erro {
+    color: #f64540;
+  }
+
 }

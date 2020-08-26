@@ -39,6 +39,39 @@
   &:hover {
     opacity: 0.9;
   }
+
+  a {
+    text-decoration: none;
+    color: $branco;
+    outline: none;
+    .button {
+      width: 121px;
+      height: 36px;
+      border-radius: 20px;
+      background-color: $laranja;
+      color: $branco;
+      line-height: 19px;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 0.25px;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+      @media screen and ($max-sm) {
+        width: 88.21px;
+        height: 26px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
 }
 
 .leftButton {
