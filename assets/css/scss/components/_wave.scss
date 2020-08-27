@@ -2,17 +2,17 @@
   background-image: url('../img/quem-somos.png');
   background-position: center;
   background-size: cover;
-  height:692px;
+  height: 43.25rem;
   width: 100%;
   position: absolute;
-  top: 773px;
+  top: 48.3125rem;
   @media screen and (max-width: 599px) {
-    top: -49px;
+    top: -3.0625rem;
     position: relative;
     background-image: url('../img/wave-responsivo.png');
     background-position: center;
     background-size: cover;
-    height: 494px;
+    height: 30.875rem;
   }
   &-institucional {
     justify-content: center;
@@ -21,36 +21,36 @@
     text-align: left;
     align-items: center;
     article {
-      margin-right: 250px;
+      margin-right: 15.625rem;
       @media screen and (max-width: 599px) {
         margin-right: 0;
         margin: 0 auto;
-        margin-bottom: 51px;
+        margin-bottom: 3.1875rem;
       }
     }
     h2 {
-      font-size: 32px;
-      line-height: 37px;
+      font-size: 2rem;
+      line-height: 2.3125rem;
       color: $branco;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       font-weight: bold;
       @media screen and (max-width: 599px) {
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
       }
     }
     p {
       color: $branco;
-      font-size: 16px;
-      line-height: 19px;
-      margin-bottom: 20px;
-      max-width: 796px;
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      margin-bottom: 1.25rem;
+      max-width: 49.75rem;
       @media screen and (max-width: 599px) {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
         max-width: 100%;
-        max-width: 303px;
-        margin-bottom: 10px;
+        max-width: 18.9375rem;
+        margin-bottom: 0.625rem;
       }
     }
   }
@@ -58,11 +58,11 @@
   &-carrossel {
     display: flex;
     justify-content: center;
-    top: -120px;
-    margin-bottom: 107px;
+    top: -7.5rem;
+    margin-bottom: 6.6875rem;
     position: relative;
     @media screen and (max-width: 599px) {
-      top: -86px;
+      top: -5.375rem;
       margin-bottom: 0;
     }
   }

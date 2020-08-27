@@ -1,8 +1,8 @@
 .formulario {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 121px;
-  margin-bottom: 100px;
+  margin-top: 7.5625rem;
+  margin-bottom: 6.25rem;
   @media screen and (max-width: 599px) {
     flex-direction: column-reverse;
   }
@@ -12,11 +12,11 @@
     align-items: center;
 
     @media screen and (max-width: 599px) {
-      margin-top: 60px;
+      margin-top: 3.75rem;
     }
 
     figure {
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
   }
 
@@ -24,17 +24,17 @@
     &__item {
       display: flex;
       align-items: center;
-      padding-bottom: 20px;
+      padding-bottom: 1.25rem;
     }
     svg, img {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
       fill: $cinza;
-      margin-right: 10px;
+      margin-right: 0.625rem;
 
       @media screen and (max-width: 599px) {
-        width: 43px;
-        height: 43px;
+        width: 2.6875rem;
+        height: 2.6875rem;
       }
     }
 
@@ -55,54 +55,55 @@
     }
 
     h2 {
-      font-size: 64px;
+      font-size: 4rem;
       font-weight: bold;
       color: $laranja;
       text-align: center;
-      margin-bottom: 33px;
+      margin-bottom: 2.0625rem;
       @media screen and (max-width: 599px) {
-        font-size: 20px;
-        margin-bottom: 23px;
+        font-size: 1.25rem;
+        margin-bottom: 1.4375rem;
         text-align: left;
-        margin-right: 140px;
+        margin-right: 8.75rem;
       }
     }
     input, textarea {
-      width: 784px;
+      width: 49rem;
       background-color: #C4C4C4;
-      height: 60px;
+      height: 3.75rem;
       border-radius: 25px;
       border: none;
       outline: none;
-      font-size: 26px;
+      font-size: 1.625rem;
       color: $branco;
       line-height: 30px;
-      padding-left: 33px;
-      margin-bottom: 26px;
+      padding-left: 2.0625rem;
+      margin-bottom: 1.625rem;
       @media screen and ($max-sm) {
         max-width: 100%;
-        width: 301px;
-        height: 31px;
-        font-size: 15px;
-        padding-left: 17px;
+        width: 18.8125rem;
+        height: 1.9375rem;
+        font-size: 0.9375rem;
+        padding-left: 1.0625rem;
       }
 
       &::placeholder {
         color: $branco;
-        font-size: 26px;
+        font-size: 1.625rem;
         @media screen and (max-width: 599px) {
-          font-size: 15px;
+          font-size: 0.9375rem;
         }
       }
     }
     textarea {
-      height: 306px;
-      padding-top: 15px;
+      height: 19.125rem;
+      padding-top: 0.9375rem;
+      resize: none;
       @media screen and (max-width: 599px) {
-        height: 162px;
-        border-radius: 15px;
-        padding-top: 7px;
-        padding-left: 12px;
+        height: 10.125rem;
+        border-radius: 0.9375rem;
+        padding-top: 0.4375rem;
+        padding-left: 0.75rem;
         margin-left: 0;
       }
     }
@@ -113,9 +114,9 @@
   }
 
   #form-erro span, #form-send span  {
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 10px;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    margin-bottom: 0.625rem;
     display: block;
   }
   
