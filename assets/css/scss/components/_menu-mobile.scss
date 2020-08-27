@@ -5,16 +5,16 @@
 @media screen and ($max-sm) {
   .js .container{ 
     position: relative;
-    width: 60px;
-    margin: 20px auto;
+    width: 3.75rem;
+    margin: 1.25rem auto;
   }
 
   .js [data-menu="button"] {
     position: absolute;
-    width: 60px;
-    height: 60px; 
+    width: 3.75rem;
+    height: 3.75rem; 
     top: 0; 
-    left: 250px;
+    left: 15.625rem;
     cursor: pointer;
     display: initial;
   }
@@ -22,9 +22,9 @@
   .js .btn-left {
     background-color: $laranja;
     position: absolute;
-    width: 45px;
-    height: 7px;
-    top: 30px;
+    width: 2.8125rem;
+    height: 0.4375rem;
+    top: 1.875rem;
     left: 0px;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
@@ -32,10 +32,10 @@
     &::before {
       background-color: $laranja;
       position: absolute;
-      width: 45px;
-      height: 7px;
+      width: 2.8125rem;
+      height: 0.4375rem;
       content: "";
-      top: -14px;
+      top: -0.875rem;
       -webkit-transition-duration: 0.5s;
       transition-duration: 0.5s;
       border-radius: 25px 0px 0px 25px;
@@ -45,10 +45,10 @@
     &::after {
       background-color: $laranja;
       position: absolute;
-      width: 45px;
-      height: 7px;
+      width: 2.8125rem;
+      height: 0.4375rem;
       content: "";
-      top: 14px;
+      top: 0.875rem;
       -webkit-transition-duration: 0.5s;
       transition-duration: 0.5s;
       border-radius: 25px 0px 0px 25px;
@@ -74,10 +74,10 @@
   .js .btn-right {
     background-color: $laranja;
     position: absolute;
-    width: 45px;
-    height: 7px;
-    top: 30px;
-    left: 30px;
+    width: 2.8125rem;
+    height: 0.4375rem;
+    top: 1.875rem;
+    left: 1.875rem;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     border-radius: 0px 25px 25px 0px;
@@ -85,10 +85,10 @@
     &::before {
       background-color: $laranja;
       position: absolute;
-      width: 45px;
-      height: 7px;
+      width: 2.8125rem;
+      height: 0.4375rem;
       content: "";
-      top: -14px;
+      top: -0.875rem;
       -webkit-transition-duration: 0.5s;
       transition-duration: 0.5s;
       border-radius: 0px 25px 25px 0px;
@@ -97,10 +97,10 @@
     &::after {
       background-color: $laranja;
       position: absolute;
-      width: 45px;
-      height: 7px;
+      width: 2.8125rem;
+      height: 0.4375rem;
       content: "";
-      top: 14px;
+      top: 0.875rem;
       -webkit-transition-duration: 0.5s;
       transition-duration: 0.5s;
       border-radius: 0px 25px 25px 0px;
@@ -126,19 +126,19 @@
   .js [data-menu="lista"] {
     display: none;
     position: absolute;
-    width: 192px;
-    height: 205px;
+    width: 12rem;
+    height: 12.8125rem;
     background: #FFFFFE;
     border-radius: 25px;
     z-index: 200;
-    top: 62px;
+    top: 3.875rem;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
-    padding: 24px;
-    left: 145px;
+    padding: 1.5rem;
+    left: 12.8125rem;
     
     a {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
       color: $cinza;
     }
   }
